@@ -2,9 +2,6 @@
 
 > _"Turning surveillance cameras into intelligent observers."_
 
-A final project developed by **Juan José Tamayo**
-as part of the **Artificial Intelligence course** for Systems Engineering.
-
 ---
 
 ## 🧠 Overview

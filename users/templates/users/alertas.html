@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de {{ camara.nombre }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="inter-font">
+    <div class="nap">
+            <img src="{% static 'img/logo.png' %}" alt="">
+    </div>
+
+    <div class="alertas-div">
+        <h1>Alertas de {{ camara.nombre }}</h1>
+
+        {% if alertas %}
+            <div class="galeria">
+                {% for alerta in alertas %}
+                <div class="alerta">
+                    <p><strong>{{ alerta.fecha_deteccion|date:"d/m/Y H:i:s" }}</strong> - {{ alerta.tipo_deteccion }}</p>
+                    <img src="{{ alerta.imagen.url }}" width="320">
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No hay imágenes disponibles para esta cámara.</p>
+        {% endif %}
+    </div>
+     <a href="{% url 'home' %}" class="cam-add">←</a>
+    
+</body>
+
+
+
+

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="inter-font">
+
+
+    <div class="main-div-log">
+        <div class="welcome-div">
+            <img src="{% static 'img/logo.png' %}" alt="">
+            <h1 class="inter-font">Bienvenido</h1>
+            <h2>Registrate para acceder a la forma más inteligente de seguridad</h2>
+            <a href="{% url 'register' %}"><button>Registrate</button></a>
+            
+        </div>
+        <div class="login-div">
+            <h1>Iniciar sesión:</h1>
+            <form method="post">
+                    {% csrf_token %}
+                    <div class="info-box">
+                        <input type="text" name="username" placeholder="Usuario">
+                    </div>
+                    <div class="info-box">
+                        <input type="password" name="password" placeholder="Contraseña">
+                    </div>
+                    <div class="container-btn">
+                        <button type="submit" id="spinetta" class="btn">Enviar</button>
+                    </div>
+            </form>
+            <small>Olvide mi contrasena</small>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>

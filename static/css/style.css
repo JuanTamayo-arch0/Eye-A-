@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+}
+.main-div-log{ 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.welcome-div{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    padding-left: 10rem;
+}
+.welcome-div img{
+    width: 9rem;
+    position: fixed;
+    top: 3rem;
+    left: 8rem;
+}
+.welcome-div h1{
+    color: #FFDE59;
+    font-size: 10rem;
+    font-weight: bold;
+    height: 2rem;
+    padding-top: 50rem;
+}
+.welcome-div h2{
+    color: #FFDE59;
+    font-size: 2.2rem;
+    padding-top: 2rem;
+}
+.welcome-div button{
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+.login-div{
+    width: 50%;
+    height: 100%;
+    background-color: #FFDE59;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-div  h1{
+    color: black;
+    font-size: 7rem;
+    font-weight: bold;
+    height: 2rem;
+    padding-bottom: 5rem;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.login-div input{
+    height: 3rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.login-div button{
+    height: 3rem;
+    width: 26rem;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.login-div small{
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+/* Home.html  */
+
+.home {
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+}
+
+.nap {
+    background-color: #FFDE59;
+    height: 6rem;
+}
+.left-div {
+    width: 40%;
+    height: 100%;
+    background-image: url("../img/CCTV\ Security.jpg");
+    background-size: cover;
+}
+
+.nap img{
+    width: 5rem;
+
+}
+
+.cameras {
+    width: 60%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.card-cont{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 5rem;
+}
+
+.cameras h1 {
+    color: #FFDE59;
+    font-size: 7rem;
+    font-weight: bold;
+    height: 2rem;
+    padding-bottom: 5rem;
+    padding: 6rem;
+}
+
+  .camara-card {
+    border: 1px solid #f1d154;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #FFDE59;
+    width: 20rem;
+    margin-left: 6rem;
+  }
+  .camara-card h3 {
+    margin-top: 0;
+  }
+  .camara-card p {
+    margin: 4px 0;
+  }
+  .camara-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #453b16;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .camara-card a:hover {
+    text-decoration: underline;
+  }
+  .add-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .add-button:hover {
+    background-color: #218838;
+  }
+
+  .cam-add{
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50px;
+    background-color: #FFDE59;
+    bottom: 2rem;
+    right: 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* nueva_camara.html */
+
+.cam-add-main{
+    display: flex;
+    height: 93vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container h2 {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFDE59;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #f4d65d;
+  }
+  .form-container a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+
+/* Cam.html  */
+
+.cam{
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+}
+
+.video{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cam-cont img{
+    border:  10rem;
+    border-radius: 50px;
+    border-color: #f0f0f0;
+}
+
+.settings{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFDE59;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.settings form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings label {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.settings input[type="number"] {
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.settings input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+.settings button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: #FFDE59;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.settings button:hover {
+    background-color: #0056b3;
+}
+
+.settings textarea {
+    height: 8rem;
+    width: 45%;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    background-color: #fff;
+}
+
+
+.settings input{
+    height: 3rem;
+    width: 35rem;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+#back{
+    bottom: 6rem;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+/* alertas.html */
+
+.alertas-div{
+    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alertas-div h1{
+    color: #FFDE59;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto;
+    margin: 2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    
+}
+
+.alerta{
+    color: #FFDE59;
+    height: 18rem;
+    width: 25rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem;
+    border-color: #FFDE59;
+    border-style:dotted;
+    align-items: center;
+    justify-items: center;
+}
+
+/* test_model.html */
+
+.test-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    min-height: 93vh;
+    height: 100%;
+    width: 100%;
+    color: #FFDE59;
+}
+
+.test-div form{
+    color: #FFDE59;
+}
+
+
+
+
